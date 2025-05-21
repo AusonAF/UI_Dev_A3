@@ -45,3 +45,7 @@ function closeMobileSideBar()
 	
 	sideBarMobile.style.left = "-400px";
 }
+function scrollContent(scrollAmount)
+{
+	document.getElementById("featuredContentDiv").scrollLeft += parseInt(scrollAmount);
+}
