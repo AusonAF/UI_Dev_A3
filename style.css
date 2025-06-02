@@ -26,7 +26,6 @@ header
 	padding: 10px;
 	box-shadow: 5px 0px 5px #999999;
 	float: left;
-	height: 1400px;
 }
 .sideBarMobile
 {
@@ -37,13 +36,14 @@ header
 	background-color: black;
 	color: white;
 	padding: 40px;
-	width: 100%;
+	width: 100vw;
 	box-sizing: border-box;	
 	box-shadow: 0px -5px 5px #999999;
 	height: 350px;
 	position: relative;
 	bottom: 0;
     z-index: 2;
+	clear: both;
 }
 .sideBarMainCategoryLinks
 {
@@ -112,9 +112,82 @@ header
 	color: #238f00;
 	margin: 5px 0 0 0;
 }
+.productCartButton
+{
+	float: right;
+	padding: 5px;
+}
 .mainContentSubheading
 {
 	text-align:center;
+}
+.productPageContent
+{
+	margin: 20px 20px 20px 350px;
+}
+.productPagePhotoContainer
+{
+	margin: 0 -20px 0 -20px;
+	overflow-x: scroll;
+	display: flex;
+	scroll-behavior: smooth;
+}
+.productPagePhotos
+{
+	margin: 5px;
+	width: 300px;
+	min-height: 250px;
+	text-align: center;
+	padding: 5px;
+}
+.productPageLeftDiv
+{
+	width: 60%;
+	min-height: 400px;
+	float: left;
+	text-align: center;
+}
+.productPageRightDiv
+{
+	width: 35%;
+	min-height: 200px;
+	float: right;
+}
+.productPagePriceLabels
+{
+	width: 50%;
+	float: left;
+}
+.productPagePrice
+{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.productPagePrice h5
+{
+	color: #760000;
+}
+.productPagePrice h6
+{
+	color: #238f00;
+	text-align: right;
+}
+.productPageRightDiv button
+{
+	height: 40px;
+	width: 100%;
+	margin: 20px 0;
+	background-color: #941e1e;
+	border: none;
+	box-shadow: 0px 2px 5px #660000;
+	padding: 0 15px;
+	background-image: url('Images/cart.svg');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 25px 25px;
+	font-family: 'pixelFont';
+	color: white;
 }
 .arrowDiv
 {
@@ -275,6 +348,18 @@ header
 	.mainContent
 	{
 		margin: 20px;
+	}
+	.productPageContent
+	{
+		margin: 20px;
+	}
+	.productPageLeftDiv
+	{
+		width: 100%;
+	}
+	.productPageRightDiv
+	{
+		width: 100%;
 	}
 	header
 	{
