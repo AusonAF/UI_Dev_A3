@@ -26,7 +26,7 @@ header
 	padding: 10px;
 	box-shadow: 5px 0px 5px #999999;
 	float: left;
-	height: 1200px;
+	height: 1400px;
 }
 .sideBarMobile
 {
@@ -35,12 +35,14 @@ header
 .footer
 {
 	background-color: black;
-	padding: 10px;
+	color: white;
+	padding: 40px;
 	width: 100%;
 	box-sizing: border-box;	
 	box-shadow: 0px -5px 5px #999999;
-	height: 250px;
+	height: 350px;
 	position: relative;
+	bottom: 0;
     z-index: 2;
 }
 .sideBarMainCategoryLinks
@@ -68,22 +70,47 @@ header
 .mainContent
 {
 	margin: 20px 20px 20px 350px;
-
 }
 .mainContentSections
 {
-	margin: 0 -25px 0 -25px;
-	overflow-x: auto;
+	margin: 0 -20px 0 -25px;
+	overflow-x: scroll;
 	display: flex;
 	scroll-behavior: smooth;
+}
+.mainContentSectionsWrap
+{
+	margin: 0 -20px 0 -25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .mainContentProducts
 {
 	margin: 10px;
-	width: 300px;
-	height: 400px;
+	width: 150px;
+	min-height: 250px;
 	text-align: center;
 	padding: 5px;
+}
+.mainContentProducts h5, a
+{
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	margin: 5px 0 0 0;
+}
+.mainContentProducts h4
+{
+	text-align: left;
+	color: #760000;
+	margin: 5px 0 0 0;
+}
+.mainContentProducts h6
+{
+	text-align: left;
+	color: #238f00;
+	margin: 5px 0 0 0;
 }
 .mainContentSubheading
 {
@@ -95,6 +122,21 @@ header
 	justify-content: center;
 	margin: 20px;
 }
+.categoryPageBanner
+{
+	height: 300px;
+	margin: -20px -20px 0 -25px;
+	text-align: center;
+	background-color: #eeeeee;
+	background-size: 1360px 295px;
+	position: 0px 100px;
+	box-shadow: 0px 5px 5px #999999;
+}
+.categoryPageBanner h4, h6
+{
+	text-align: center;
+}
+
 .navBar
 {
 	background-color: #941e1e;
