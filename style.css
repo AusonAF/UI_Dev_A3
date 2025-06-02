@@ -189,6 +189,62 @@ header
 	font-family: 'pixelFont';
 	color: white;
 }
+.checkoutPageHeadings
+{
+	text-align: center;
+}
+.personalDetailsDiv
+{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.addressDetailsDiv
+{
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+.personalDetailsDiv h5, .addressDetailsDiv h5
+{
+	margin: 15px 10px 10px 10px;
+}
+.personalDetailsDiv h5:before, .addressDetailsDiv h5:before
+{
+	color: red;
+	content: "*";
+	padding: 5px;
+}
+.personalDetailsDiv input, .addressDetailsDiv input, .addressDetailsDiv select
+{
+	box-sizing: border-box;
+	height: 45px;
+	width: 70%;
+	min-width: 300px;
+	margin: 5px 0;
+	background-color: #dddddd;
+	border: none;
+	box-shadow: 0px 2px 5px #999999;
+	padding: 0 15px;
+	font-family: 'pixelFont';
+}
+.checkoutDetailAcceptDiv
+{
+	width: 50%;
+	text-align: center;
+	margin: 50px auto 50px auto;
+	padding: 50px;
+	clear: both;
+}
+.checkboxStyle
+{
+	position: relative;
+	top: 10px;
+	padding: 5px;
+	accent-color: #b70000;
+	height: 35px;
+	width: 35px;
+}
 .arrowDiv
 {
 	display: flex;
@@ -360,6 +416,20 @@ header
 	.productPageRightDiv
 	{
 		width: 100%;
+	}
+	.personalDetailsDiv
+	{
+		width: 100%;
+	}
+	.addressDetailsDiv
+	{
+		width: 100%;
+	}
+	.checkoutDetailAcceptDiv
+	{
+		width: 100%;
+		margin: 0;
+		padding: 50px 0 50px 0;
 	}
 	header
 	{
