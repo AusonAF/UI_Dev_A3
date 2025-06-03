@@ -29,7 +29,7 @@
 		<div>
 	</div>	
 </header>
-<body>
+<body onload="updateCartItems()">
 	<div class="homeBanner">
 		<h1>Melbourne's Retro Games Store</h1>
 	</div>
@@ -77,7 +77,7 @@
 		</div>
 
 		<div class="cartBarDiv" id="product1">
-			<img src="Images/close.svg" class="cartBarRemoveButton" width="20px" height="20px">
+			<img src="Images/close.svg" class="cartBarRemoveButton" onclick="removeFromCart(1)"width="20px" height="20px">
 			<img src="Images/marioParty2_1.png" width="100px" height="100px">
 			<h4>$124.99</h4>
 			<h5>Mario Party 2 N64 cartridge</h5>

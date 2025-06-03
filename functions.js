@@ -64,5 +64,24 @@ function scrollContent(scrollAmount)
 }
 function updateCartItems()
 {
-	
+	for (let i = 1; i < 5; i++)
+	{
+		if (localStorage.getItem("product" + i) != "true")
+		{
+			document.getElementById("product" + i.toString()).style.visibility = "collapse";
+		}
+		else
+		{
+			console.log("test");
+		}
+	}
+}
+function addToCart(productID)
+{
+	localStorage.setItem("product" + productID.toString(), "true");
+}
+function removeFromCart(productID)
+{
+	localStorage.removeItem("product" + productID.toString());
+	updateCartItems();
 }
