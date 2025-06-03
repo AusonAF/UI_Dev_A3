@@ -64,17 +64,5 @@ function scrollContent(scrollAmount)
 }
 function updateCartItems()
 {
-	let cookieString = document.cookie;
-
-	for (var i = 1; i < 4; i++)
-	{
-		if cookieString.includes(i)
-		{
-			
-		}
-		else
-		{
-			document.getElementById("product" + i).visibility = "collapse";
-		}
-	}
+	
 }
