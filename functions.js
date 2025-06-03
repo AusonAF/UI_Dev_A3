@@ -1,27 +1,27 @@
 //
-//							  ______
-//			   				 /      \
-//							/	     \
-//						   /	      \
-//						  /     /\     \
-//						 /_____/  \_____\
-//				  ______________________________
-//				 |					            |
+//                            ______
+//                           /      \
+//                          /        \
+//                         /          \
+//                        /     /\     \
+//                       /_____/  \_____\
+//                ______________________________
+//               |                              |
 //               |____________      ____________|
 //                   ______   |    |   ______
 //                  /	  /   |	   |   \     \
-//				   /	 /	  |	   |	\     \
-//				  /	    /	  |	   |     \     \
-//				 /	   /	  |____|      \     \
-//				/     /__________________  \     \
-//			   /					     \  \     \
-//			  /___________________________\  \_____\
-//			       			   ____
-//							  |____|
+//                 /	 /    |	   |    \     \
+//                /	    /     |	   |     \     \
+//               /	   /      |____|      \     \
+//              /     /__________________  \     \
+//             /                         \  \     \
+//            /___________________________\  \_____\
+//                             ____
+//                            |____|
 //
-//						   AUSON TSENG
-//						 TSENG SHAO HUAN
-//							  -2025-
+//                         AUSON TSENG
+//                       TSENG SHAO HUAN
+//                            -2025-
 
 /*
 
@@ -34,18 +34,47 @@ who have supported me throughout this semester.
 
 function openMobileSideBar()
 {
-	var sideBar = document.getElementById("sideBarMobile");
+	let sideBar = document.getElementById("sideBarMobile");
 	
-	sideBarMobile.style.left = "0px";
+	sideBar.style.left = "0px";
 }
 
 function closeMobileSideBar()
 {
-	var sideBar = document.getElementById("sideBarMobile");
+	let sideBar = document.getElementById("sideBarMobile");
 	
-	sideBarMobile.style.left = "-400px";
+	sideBar.style.left = "-400px";
+}
+function openCartBar()
+{
+	let cartBar = document.getElementById("cartBar");
+	
+	cartBar.style.right = "0px";
+}
+
+function closeCartBar()
+{
+	let cartBar = document.getElementById("cartBar");
+	
+	cartBar.style.right = "-400px";
 }
 function scrollContent(scrollAmount)
 {
 	document.getElementById("featuredContentDiv").scrollLeft += parseInt(scrollAmount);
+}
+function updateCartItems()
+{
+	let cookieString = document.cookie;
+
+	for (var i = 1; i < 4; i++)
+	{
+		if cookieString.includes(i)
+		{
+			
+		}
+		else
+		{
+			document.getElementById("product" + i).visibility = "collapse";
+		}
+	}
 }

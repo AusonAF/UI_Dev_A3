@@ -31,6 +31,36 @@ header
 {
 	display: none;
 }
+.cartBar
+{
+	display: block;
+	background-color: #dddddd;
+	width: 300px; 
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	right: -400px;
+	padding: 20px;
+	box-shadow: -5px 0px 5px #999999;
+	float: right;
+	height: 100vh;
+	overflow-x: auto;
+	overflow-y: auto;
+	transition: right 0.5s;
+}
+.cartBarDiv
+{
+	margin: -2px;
+}
+.cartBarDiv h4
+{
+	color: #760000;
+}
+.cartBarRemoveButton
+{
+	float: right;
+	margin: 10px;
+}
 .footer
 {
 	background-color: black;
@@ -173,7 +203,7 @@ header
 	color: #238f00;
 	text-align: right;
 }
-.productPageRightDiv button
+.largeRedButton
 {
 	height: 40px;
 	width: 100%;
