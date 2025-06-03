@@ -9,7 +9,7 @@
 <header>
 	<div class="navBar">
 		<div class="cartDiv" onclick="openCartBar()">
-			<img src="Images/cart.svg" height="40px">
+			<label id="numberOfItemsInCart">0</label><img src="Images/cart.svg" height="40px">
 		</div>
 		<div class="contentDiv" onclick="openMobileSideBar()">
 			<img src="Images/content.svg" height="40px">
@@ -69,9 +69,9 @@
 		<br><br><br>
 
 		<div class="checkoutPageHeadings">
-			<h2>Checkout</h2>
-			<h4>0 item(s)</h4>
-			<h4>Total price: $0</h4>
+			<h2>Cart</h2>
+			<h4 id="itemTotal">0 item(s)</h4>
+			<h4 id="totalPrice">Total price: $0</h4>
 			<button class="largeRedButton">Proceed to checkout</button>
 			<hr>
 		</div>
@@ -84,21 +84,21 @@
 			<hr>
 		</div>
 		<div class="cartBarDiv" id="product2">
-			<img src="Images/close.svg" class="cartBarRemoveButton" width="20px" height="20px">
+			<img src="Images/close.svg" class="cartBarRemoveButton" onclick="removeFromCart(2)" width="20px" height="20px">
 			<img src="Images/marioGolf.png" width="100px" height="100px">
 			<h4>$72.99</h4>
 			<h5>Mario Golf N64 cartridge</h5>
 			<hr>
 		</div>
 		<div class="cartBarDiv" id="product3">
-			<img src="Images/close.svg" class="cartBarRemoveButton" width="20px" height="20px">
+			<img src="Images/close.svg" class="cartBarRemoveButton" onclick="removeFromCart(3)" width="20px" height="20px">
 			<img src="Images/yoshisStory.png" width="100px" height="100px">
 			<h4>$49.99</h4>
 			<h5>Yoshi's Story N64 cartridge</h5>
 			<hr>
 		</div>
 		<div class="cartBarDiv" id="product4">
-			<img src="Images/close.svg" class="cartBarRemoveButton" width="20px" height="20px">
+			<img src="Images/close.svg" class="cartBarRemoveButton" onclick="removeFromCart(4)" width="20px" height="20px">
 			<img src="Images/banjoTooie.png" width="100px" height="100px">
 			<h4>$89.99</h4>
 			<h5>Banjo-Tooie N64 cartidge</h5>
