@@ -9,7 +9,7 @@ body
 	font-family: 'pixelFont';
 	margin: 0px;
 	border: 0px;
-
+	-webkit-appearance: none;
 }
 header
 {
@@ -319,7 +319,47 @@ header
 .searchBarDiv
 {
 	float: right;
+	height: 60%;
+	background-color: #b70000;
+	border: none;
+	position: relative;
+	top: 15px;
+	box-shadow: 0px 2px 5px #660000;
+	margin: 0;
+	padding: -20px 0 -20px;
+}
+.searchBar
+{
 	height: 100%;
+	width: 190px;
+	margin: 0;
+	background-color: #00000000;
+	border: none;
+
+	padding: 0 15px;
+
+	font-family: 'pixelFont';
+	color: white;
+}
+.searchBar::placeholder
+{
+	color: white;
+}
+.searchBarSubmit
+{
+	height: 100%;
+	width: 50px;
+
+	border: none;
+	background-color: #cf0000;
+	box-shadow: 0px 2px 5px #660000;
+	padding: 0 15px;
+	background-image: url('Images/search.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px 25px;
+	font-family: 'pixelFont';
+	color: white;
 }
 .contentDiv
 {
@@ -330,26 +370,7 @@ header
 	float: right;
 	margin: 18px;
 }
-.searchBar
-{
-	height: 50%;
-	width: 250px;
-	margin: 20px 0;
-	background-color: #b70000;
-	border: none;
-	box-shadow: 0px 2px 5px #660000;
-	padding: 0 15px;
-	background-image: url('Images/search.svg');
-	background-repeat: no-repeat;
-	background-position: right 10px center;
-	background-size: 25px 25px;
-	font-family: 'pixelFont';
-	color: white;
-}
-.searchBar::placeholder
-{
-	color: white;
-}
+
 .logo
 {
 	height: 70%;
@@ -388,10 +409,27 @@ header
 		box-shadow: 0px 5px 5px #444444;
 		width: 100%;
 		margin: 0;
+		position: relative;
+		top: 0;
+		padding: 0;
 	}
 	.searchBar
 	{
-		width: 80%;
+		width: 65%;
+		height: 60%;
+		background-color: #b70000;
+		box-shadow: 0px 2px 5px #660000;
+		box-sizing: border-box;
+		margin: 0 -8px;
+	}
+	.searchBarSubmit
+	{
+		width: 15%;
+		height: 60%;
+		background-color: #cf0000;
+		box-shadow: 0px 2px 5px #660000;
+		box-sizing: border-box;
+		margin: 10px -8px;
 	}
 	.logo
 	{
