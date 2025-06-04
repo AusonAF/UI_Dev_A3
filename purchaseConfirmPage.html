@@ -8,9 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <header>
 	<div class="navBar">
-		<div class="cartDiv" onclick="openCartBar()">
-			<label id="numberOfItemsInCart">0</label><img src="Images/cart.svg" height="40px">
-		</div>
+		<a href="#itemTotal">
+			<div class="cartDiv">
+				<label id="numberOfItemsInCart">0</label><img src="Images/cart.svg" height="40px">
+			</div>
+		</a>
 		<div class="contentDiv" onclick="openMobileSideBar()">
 			<img src="Images/content.svg" height="40px">
 		</div>
@@ -28,7 +30,7 @@
 		<div>
 	</div>	
 </header>
-<body onload="setupCheckoutPage()">
+<body onload="setupConfirmationPage()">
 	<div class="sideBarMobile" id="sideBarMobile">
 		<img src="Images/contentDark.svg" height="40px" onclick="closeMobileSideBar()">
 		<a href="#" class="sideBarMainCategoryLinks">Home</a>
@@ -59,92 +61,69 @@
 		<a href="#" class="sideBarMainCategoryLinks">Contact</a>
 		<br><br><br>
 	</div>
-	<div class="cartBar" id="cartBar">
-		<img src="Images/close.svg" style="float:right" height="30px" onclick="closeCartBar()">
-
-		<br><br><br>
-
-		<div class="checkoutPageHeadings">
-			<h2>Cart</h2>
-			<h4 id="itemTotal">0 item(s)</h4>
-			<h4 id="totalPrice">Total price: $0</h4>
-			<hr>
-		</div>
-
-		<div class="cartBarDiv" id="product1">
+	<div class="checkoutPageHeadings">
+		<h2>Cart</h2>
+		<h4 id="itemTotal">0 item(s)</h4>
+		<h4 id="totalPrice">Total price: $0</h4>
+		<hr>
+		<div class="confirmPageProductDiv" id="product1">
 			<img src="Images/marioParty2_1.png" width="100px" height="100px">
 			<h4>$124.99</h4>
 			<h5>Mario Party 2 N64 cartridge</h5>
 			<hr>
 		</div>
-		<div class="cartBarDiv" id="product2">
+		<div class="confirmPageProductDiv" id="product2">
 			<img src="Images/marioGolf.png" width="100px" height="100px">
 			<h4>$72.99</h4>
 			<h5>Mario Golf N64 cartridge</h5>
 			<hr>
 		</div>
-		<div class="cartBarDiv" id="product3">
+		<div class="confirmPageProductDiv" id="product3">
 			<img src="Images/yoshisStory.png" width="100px" height="100px">
 			<h4>$49.99</h4>
 			<h5>Yoshi's Story N64 cartridge</h5>
 			<hr>
 		</div>
-		<div class="cartBarDiv" id="product4">
+		<div class="confirmPageProductDiv" id="product4">
 			<img src="Images/banjoTooie.png" width="100px" height="100px">
 			<h4>$89.99</h4>
 			<h5>Banjo-Tooie N64 cartidge</h5>
 			<hr>
 		</div>
+	</div>
 
-		<br><br><br>
-	</div>
-	<div class="checkoutPageHeadings">
-		<h2>Checkout</h2>
-		<h4 id="checkoutNumberOfItems">0 item(s)</h4>
-		<h4 id="checkoutTotalPrice">Total price: $0</h4>
-		<hr>
-	</div>
-	<form onsubmit="processCheckoutPage()">
+		
+	<form onsubmit="confirmDetailsSubmit()">
 		<div class="personalDetailsDiv">
 			<h3>Personal details</h3>
 			<br>
 			<h5>First name</h5>
-			<input id="fname" type="text" required placeholder="First name...">
+			<label id="fname"></label>
 			<h5>Last name</h5>
-			<input id="lname" type="text" required placeholder="Last name...">
+			<label id="lname"></label>
 			<h5>Email address</h5>
-			<input id="email" type="email" required placeholder="Email...">
+			<label id="email"></label>
 			<h5>Phone number</h5>
-			<input id="phone" type="text" required placeholder="Phone number..."> 
+			<label id="phone"></label>
 		</div>
 		<div class="addressDetailsDiv">
 			<h3>Address details</h3>
 			<br>
 			<h5>Street address</h5>
-			<input id="streetAddress" type="text" required placeholder="Street address...">
+			<label id="streetAddress"></label>
 			<h5>Suburb</h5>
-			<input id="suburb" type="text" required placeholder="Suburb...">
+			<label id="suburb"></label>
 			<h5>State/Territory</h5>
-			<select id="state">
-				<option value="vic">Victoria</option>
-				<option value="nsw">New South Wales</option>
-				<option value="qld">Queensland</option>
-				<option value="sa">South Australia</option>
-				<option value="wa">Western Australia</option>
-				<option value="tas">Tasmania</option>
-				<option value="nt">Northern Territory</option>
-				<option value="act">Australian Capital Territory</option>
-			</select>
+			<label id="state"></label>
 			<h5>Postcode</h5>
-			<input id="postcode" type="text" required placeholder="Postcode"> 
+			<label id="postcode"></label>
 		</div>
 		<div class="checkoutDetailAcceptDiv">
-			<label>I have read and agree to the terms and conditions</label>
+			<label>I have checked and confirmed that all details are correct</label>
 			<input type="checkbox" id="tcToggle" required onchange="toggleNextButton()" class="checkboxStyle">
 
-			<input class="genericRedButton" id="nextButton" disabled value="Proceed to order confirmation" type="submit">
+			<input class="genericRedButton" id="nextButton" disabled value="Proceed to payment" type="submit">
 		</div>
-	
 	</form>
 	<div class="footer">
 		<h1>TEST</h1>

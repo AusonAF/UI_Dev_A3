@@ -24,8 +24,8 @@
 		</div>
 		
 		<div class="searchBarDiv">
-			<input type="text" placeholder="Search..." class="searchBar">
-			<input type="text" value="" disabled class="searchBarSubmit">
+			<input type="text" id="searchBox" placeholder="Search..." class="searchBar">
+			<input type="text" value="" class="searchBarSubmit" readonly onclick="search()">
 		<div>
 	</div>	
 </header>
@@ -72,7 +72,9 @@
 			<h2>Cart</h2>
 			<h4 id="itemTotal">0 item(s)</h4>
 			<h4 id="totalPrice">Total price: $0</h4>
-			<button class="largeRedButton">Proceed to checkout</button>
+			<a href="checkoutDetailsPage.html">
+				<button class="largeRedButton">Proceed to checkout</button>
+			</a>
 			<hr>
 		</div>
 

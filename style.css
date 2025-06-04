@@ -9,7 +9,7 @@ body
 	font-family: 'pixelFont';
 	margin: 0px;
 	border: 0px;
-
+	-webkit-appearance: none; 
 }
 header
 {
@@ -219,6 +219,32 @@ header
 	font-family: 'pixelFont';
 	color: white;
 }
+.genericRedButton
+{
+	height: 40px;
+	width: 85%;
+	margin: 20px 0;
+	background-color: #941e1e;
+	border: none;
+	box-shadow: 0px 2px 5px #660000;
+	padding: 0 15px;
+
+	font-family: 'pixelFont';
+	color: white;
+}
+.genericRedButton:disabled
+{
+	height: 40px;
+	width: 85%;
+	margin: 20px 0;
+	background-color: #cccccc;
+	border: none;
+	box-shadow: 0px 2px 5px #666666;
+	padding: 0 15px;
+
+	font-family: 'pixelFont';
+	color: white;
+}
 .checkoutPageHeadings
 {
 	text-align: center;
@@ -275,6 +301,11 @@ header
 	height: 35px;
 	width: 35px;
 }
+.confirmPageProductDiv
+{
+	text-align: center;
+}
+
 .arrowDiv
 {
 	display: flex;
@@ -288,6 +319,17 @@ header
 	text-align: center;
 	background-color: #eeeeee;
 	background-size: 1360px 295px;
+	position: 0px 100px;
+	box-shadow: 0px 5px 5px #999999;
+}
+.searchPageBanner
+{
+	height: 120px;
+	padding: 5px;
+	margin: -20px -20px 0 -25px;
+	text-align: center;
+	background-color: #eeeeee;
+
 	position: 0px 100px;
 	box-shadow: 0px 5px 5px #999999;
 }
@@ -348,7 +390,7 @@ header
 .searchBarSubmit
 {
 	height: 100%;
-	width: 50px;
+	width: 40px;
 
 	border: none;
 	background-color: #cf0000;
@@ -369,6 +411,7 @@ header
 {
 	float: right;
 	margin: 18px;
+	color: white;
 }
 
 .logo
