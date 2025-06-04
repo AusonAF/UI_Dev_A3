@@ -420,7 +420,7 @@ header
 		background-color: #b70000;
 		box-shadow: 0px 2px 5px #660000;
 		box-sizing: border-box;
-		margin: 0 -8px;
+		margin: 10px -8px;
 	}
 	.searchBarSubmit
 	{
