@@ -9,7 +9,7 @@ body
 	font-family: 'pixelFont';
 	margin: 0px;
 	border: 0px;
-	-webkit-appearance: none; 
+
 }
 header
 {
@@ -420,7 +420,7 @@ header
 		background-color: #b70000;
 		box-shadow: 0px 2px 5px #660000;
 		box-sizing: border-box;
-		margin: 10px -8px;
+		margin: 0 -8px;
 	}
 	.searchBarSubmit
 	{
