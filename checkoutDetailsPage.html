@@ -104,7 +104,7 @@
 		<h4 id="checkoutTotalPrice">Total price: $0</h4>
 		<hr>
 	</div>
-	<form onsubmit="processCheckoutPage()">
+	<form id="detailsForm">
 		<div class="personalDetailsDiv">
 			<h3>Personal details</h3>
 			<br>
@@ -140,12 +140,12 @@
 		</div>
 		<div class="checkoutDetailAcceptDiv">
 			<label>I have read and agree to the terms and conditions</label>
-			<input type="checkbox" id="tcToggle" required onchange="toggleNextButton()" class="checkboxStyle">
-
-			<input class="genericRedButton" id="nextButton" disabled value="Proceed to order confirmation" type="submit">
+			<input type="checkbox" id="tcToggle" required  onchange="toggleNextButton()" class="checkboxStyle">
+			</form>
+			<button class="genericRedButton" id="nextButton" disabled onclick="processCheckoutPage()">Proceed to order confirmation</button>
 		</div>
 	
-	</form>
+	
 	<div class="footer">
 		<h1>TEST</h1>
 		<p>
