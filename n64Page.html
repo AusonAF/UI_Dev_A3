@@ -136,12 +136,44 @@
 			<h6>Shop > Nintendo > Nintendo 64</h6>
 		</div>
 		<h4>3 item(s)</h3>
-		<select>
+		<select id="sortBox" onchange="changeSortMethod()">
 			<option value="az">Sort by A-Z</option>
 			<option value="price">Sort by Price</option>
 		</select>
 		<hr>
-		<div class="mainContentSectionsWrap">
+		<div id="azSortDiv" class="mainContentSectionsWrap">
+			<div class="mainContentProducts">
+				<img src="Images/banjoTooie.png" width="150px" height="150px">
+				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton4" class="productCartButton" onclick="addToCart(4)">
+				<h4>$89.99</h4>
+				<h6>In stock</h6>
+				<h5>Banjo-Tooie N64 cartidge</h5>
+			</div>
+			<div class="mainContentProducts">
+				<img src="Images/marioGolf.png" width="150px" height="150px">
+				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton2" class="productCartButton" onclick="addToCart(2)">
+				<h4>$72.99</h4>
+				<h6>In stock</h6>
+				<h5>Mario Golf N64 cartridge</h5>
+			</div>
+			<div class="mainContentProducts">
+				<a href="product1Page.html">
+					<img src="Images/marioParty2_1.png" width="150px" height="150px">
+				</a>
+				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton1" class="productCartButton" onclick="addToCart(1)">
+				<h4>$124.99</h4>
+				<h6>In stock</h6>
+				<h5>Mario Party 2 N64 catridge</h5>
+			</div>
+			<div class="mainContentProducts">
+				<img src="Images/yoshisStory.png" width="150px" height="150px">
+				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton3" class="productCartButton" onclick="addToCart(3)">
+				<h4>$49.99</h4>
+				<h6>In stock</h6>
+				<h5>Yoshi's Story N64 cartridge</h5>
+			</div>	
+		</div>
+		<div id="priceSortDiv" class="mainContentSectionsWrap" style="display: none">
 			<div class="mainContentProducts">
 				<a href="product1Page.html">
 					<img src="Images/marioParty2_1.png" width="150px" height="150px">
@@ -159,25 +191,25 @@
 				<h5>Mario Golf N64 cartridge</h5>
 			</div>
 			<div class="mainContentProducts">
-				<img src="Images/yoshisStory.png" width="150px" height="150px">
-				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton3" class="productCartButton" onclick="addToCart(3)">
-				<h4>$49.99</h4>
-				<h6>In stock</h6>
-				<h5>Yoshi's Story N64 cartridge</h5>
-			</div>
-			<div class="mainContentProducts">
 				<img src="Images/banjoTooie.png" width="150px" height="150px">
 				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton4" class="productCartButton" onclick="addToCart(4)">
 				<h4>$89.99</h4>
 				<h6>In stock</h6>
 				<h5>Banjo-Tooie N64 cartidge</h5>
 			</div>
+			<div class="mainContentProducts">
+				<img src="Images/yoshisStory.png" width="150px" height="150px">
+				<img src="Images/cartDark.svg" width="30px" height="30px" id="productCartButton3" class="productCartButton" onclick="addToCart(3)">
+				<h4>$49.99</h4>
+				<h6>In stock</h6>
+				<h5>Yoshi's Story N64 cartridge</h5>
+			</div>
 		</div>
 		<hr>
 		
 	</div>
 	<div class="footer">
-		<h1>TEST</h1>
+		<h1>Game on!</h1>
 		<p>
 			Email: admin@maxxgaming.com.au<br>
 			Phone: 0424 777 958<br>

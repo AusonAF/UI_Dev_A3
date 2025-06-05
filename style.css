@@ -9,6 +9,12 @@ body
 	font-family: 'pixelFont';
 	margin: 0px;
 	border: 0px;
+
+	/* While using a PC on MS Edge is fine, I discovered that some elements look messed up on Apple devices.
+	These issues include element positioning and colour. While additional modifications to suit a wider range
+	of devices are outside of the A3 scope, this below is to ensure elements are displayed in an acceptable
+	state should the person marking this assignment be using an Apple system such as macOS and Safari.
+	*/
 	-webkit-appearance: none; 
 }
 header

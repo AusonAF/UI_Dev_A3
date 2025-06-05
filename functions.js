@@ -160,6 +160,21 @@ function setupSearchPage()
 	updateCartItems();
 }
 
+//change the sorting method in the product category page (hardcoded)
+function changeSortMethod()
+{
+	if (document.getElementById("sortBox").value == "az")
+	{
+		document.getElementById("azSortDiv").style.display = "flex";
+		document.getElementById("priceSortDiv").style.display = "none";
+	}
+	else
+	{
+		document.getElementById("azSortDiv").style.display = "none";
+		document.getElementById("priceSortDiv").style.display = "flex";
+	}
+}
+
 //setup page to display total price, cart items and number of items
 function setupCheckoutPage()
 {
