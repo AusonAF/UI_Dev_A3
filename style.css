@@ -14,6 +14,7 @@ body
 	These issues include element positioning and colour. While additional modifications to suit a wider range
 	of devices are outside of the A3 scope, this below is to ensure elements are displayed in an acceptable
 	state should the person marking this assignment be using an Apple system such as macOS and Safari.
+	See A3 report for more details.
 	*/
 	-webkit-appearance: none; 
 }
@@ -250,6 +251,14 @@ header
 
 	font-family: 'pixelFont';
 	color: white;
+}
+.sortBox
+{
+	font-family: 'pixelFont';
+	border: none;
+	background-color: #eeeeee;
+	box-shadow: 0px 1px 3px #666666;
+	padding: 5px;
 }
 .checkoutPageHeadings
 {
@@ -516,7 +525,7 @@ header
 		height: 100vh;
 		overflow-x: auto;
 		overflow-y: auto;
-		transition: left 0.5s; /* Will be changed via JS onclick function*/
+		transition: left 0.5s;
 	}
 	.mainContent
 	{
